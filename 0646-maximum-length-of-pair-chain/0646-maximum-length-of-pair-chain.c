@@ -3,16 +3,6 @@ int findLongestChain(int** pairs, int pairsSize, int* pairsColSize){
     int ret = 1;
     int *tmp;
     
-    /*for(int i = 0; i < pairsSize - 1; i++){
-        for(int j = i + 1; j < pairsSize; j++){
-        if(pairs[i][1] - pairs[i][0] > pairs[j][1] - pairs[j][0]){
-            tmp = pairs[i];
-            pairs[i] = pairs[j];
-            pairs[j] = tmp;
-        }
-        }
-    }*/
-    
     for(int i = 0; i < pairsSize - 1; i++){
         for(int j = i + 1; j < pairsSize; j++){
             if(pairs[i][1] == pairs[j][1]){
