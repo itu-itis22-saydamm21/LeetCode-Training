@@ -9,10 +9,10 @@ public:
         groups[size].push_back(i);
 
         if (groups[size].size() == size) {
-            result.push_back(move(groups[size]));
+            result.push_back(groups[size]);
+            groups[size].clear();
         }
     }
-
     return result;
     }
 };
