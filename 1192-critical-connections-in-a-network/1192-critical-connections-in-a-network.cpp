@@ -13,7 +13,7 @@ public:
         for(int child : adj[node]){
             if(child == p) continue;
             if(visited[child]){
-                low[node] = min(low[node], tin[child]);
+                low[node] = min(low[node], low[child]);
             }
             else{
                 dfs(child, node);
