@@ -10,7 +10,7 @@ public:
             if(i == curr_end){
                 steps++;
                 curr_end = max_reach;
-                //if(curr_end >= nums.size() - 1) break;
+                if(curr_end >= nums.size() - 1) break;
             }
         }
         return steps;
